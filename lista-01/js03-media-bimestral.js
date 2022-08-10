@@ -33,11 +33,20 @@ var media, quantidadeDeNotas
 var total = 0
 
 // Faça um loop para achar o total de notas
+for (var n of notas){
+    total+=n
+}
 
 // Veja como pegar este valor com base na entrada
-quantidadeDeNotas = 5
-media = 0    // ?
+quantidadeDeNotas = notas.length
+media = total / quantidadeDeNotas
 
-var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
+let situacao = ''
+if (media >= 7){
+    situacao = "APROVADO"
+} else {
+    situacao = "REPROVADO"
+}
+var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1) + '. ' + situacao + '.'
 
 console.log(resultado)
