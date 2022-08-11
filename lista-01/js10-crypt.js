@@ -24,17 +24,32 @@
  */
 
 // Entrada
-var texto = 'abacate'
+var texto = 'zebra'
 
 // implemente aqui uma lógica para criptografar o texto
+lista = []
 
-var textoCripto = 'bcbduf'
+for (var el of texto){
+	if (el == 'z'){
+		el = '?'
+	}
+	if (el == 'Z'){
+		el = '#'
+	}
+	el = el.charCodeAt(0) +1
+	
+	lista.push(String.fromCharCode(el))
+}
 
-console.log(textoCripto)
+console.log(`Encriptando "${texto}": ${lista.toString()}.`)
+// var textoCripto = ""
+// console.log(textoCripto)
 
 
-// Minha abordagem:
+// Minha 1ª abordagem:
 mensagem = "Esse amor é azul como o mar azul"
+console.log('')
+console.log(`Segundo método de criptografia!`)
 console.log(`Mensagem a ser criptografada: "${mensagem}"`)
 
 function encripta(dados){

@@ -24,10 +24,10 @@ console.log(resultado)
 // Minha abordagem:
 const input = 'N'
 
-if (input == 'Y' || input == 'y' || input == 'yes' || input == 'S' || input == 's' || input == 'sim'){
+if (input == 'Y' || input == 'y' || input == 'yes' || input == 'S' || input == 's' || input == 'sim' || input == '1' || input == '👍'){
     console.log(true)
 } else if (input == 'N' || input == 'n' || input == 'no' || input == 'nao'){
     console.log(false)
 } else {
-    console.log('Digite um caractere válido')
+    console.log(false)
 }

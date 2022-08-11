@@ -2,7 +2,12 @@
 
 let numero_tabuada = 1
 var cont = 1
+let array = []
 while (cont < 11){
-    console.log(`${numero_tabuada} X ${cont} = ${numero_tabuada * cont}`)
+    array.push(`${numero_tabuada} X ${cont} = ${numero_tabuada * cont}`)
     cont++
 }
+
+tabuada_completa = array.toString()
+tabuada_completa = tabuada_completa.replace(',', ', ')
+console.log(`Tabuada de ${numero_tabuada}: ${tabuada_completa}`)

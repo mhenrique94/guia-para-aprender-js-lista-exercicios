@@ -20,11 +20,19 @@ var n1 = 'A'
 var n2 = 40
 
 // Saída
-var resultado = '?'
 
-console.log(resultado)
+if (typeof(n1) != 'number'){
+    console.log(`'${n1}' não é um número!`)
+} else if (typeof(n2) != 'number'){
+    console.log(`'${n2}' não é um número!`)
+} else {
+    var resultado = n1 + n2
+    console.log(resultado)
+}
 
-// Minha abordagem:
+
+
+console.log('Minha abordagem anterior:')
 
 let numeros = [1, 8]
 var soma = 0
