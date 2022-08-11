@@ -12,9 +12,10 @@
  */
 
 // Entrada
-var entrada = [40,42,1,0,-10]
+let lista = [300, 1, 2, 3, 4, 54, 6, 89, 4, 1]
 
-var segundoMaior = 40
+lista.sort(function(a, b){return a-b})
+console.log(`Lista de entrada: ${lista}. Segundo maior elemento: ${lista[lista.length - 2]}`)
 
 
 console.log(segundoMaior)

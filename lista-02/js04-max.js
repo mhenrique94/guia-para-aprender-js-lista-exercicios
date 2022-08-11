@@ -8,9 +8,13 @@
  */
 
 // Entrada
-var entrada = [1,1,40]
+let lista = [1, 2, 3, 4, 54, 6, 89, 4, 1]
 
-var maior = 0
-
+let maior = 0
+for (var n of lista){
+    if (n > maior){
+        maior = n
+    }
+}
 
 console.log(maior)

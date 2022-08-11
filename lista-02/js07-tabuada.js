@@ -16,8 +16,19 @@
  */
 
 // Entrada
-var entrada = 5
+let numero_tabuada = 1
+var cont = 1
+let array = []
 
-var tabuada = [5, 10, 15]
-
-console.log(tabuada)
+if (numero_tabuada < 0 || numero_tabuada > 10){
+    console.log('Entrada inválida')
+} else {
+    while (cont < 11){
+        // array.push(`${numero_tabuada} X ${cont} = ${numero_tabuada * cont}`)
+        console.log(`${numero_tabuada} X ${cont} = ${numero_tabuada * cont}`)
+        cont++
+    }
+}
+// tabuada_completa = array.toString()
+// tabuada_completa = tabuada_completa.replace(/,/g, ', ') // não funciona, pq?
+// console.log(`Tabuada de ${numero_tabuada}: ${tabuada_completa}`)

@@ -7,10 +7,11 @@
  */
 
 // Entrada
-var entrada = [1,3,5,7,8,10]
+let lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let soma = 0
 
-var soma = 0
-
-// percorrer a lista e fazer a somatória dos elementos
-
-console.log(soma)
+console.log(`Entrada: ${lista}.`)
+for (n of lista){
+    soma += n
+}
+console.log(`${soma}.`)

@@ -7,11 +7,15 @@
  */
 
 // Entrada
-var entrada = [1,3,5,7,8]
-
-var saida = []
+let lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // gerar a lista de saida
-saida = ['impar', 'impar', 'impar', 'impar', 'par']
-
+let saida=[]
+for (n of lista){
+    if (n%2 == 0){
+        saida.push('PAR')
+    } else {
+        saida.push('IMPAR')
+    }
+}
 console.log(saida)

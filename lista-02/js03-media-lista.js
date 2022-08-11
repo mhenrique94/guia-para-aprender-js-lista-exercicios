@@ -7,12 +7,18 @@
  */
 
 // Entrada
-var entrada = [1,1,40]
 
-var soma = 0
+let lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // percorrer a lista e fazer a somatória dos elementos
 
-let media = 0
+let soma = 0
 
-console.log(media.toFixed(1))
+console.log(`Entrada: ${lista}.`)
+
+for (n of lista){
+    soma += n
+}
+
+let media = soma/lista.length
+console.log(`${media.toFixed(1)}`)

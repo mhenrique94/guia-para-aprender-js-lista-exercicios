@@ -10,6 +10,15 @@
 var range = [1, 150]
 
 var impares = []
-
+var n = range[0]
+while (n <= range[1]){
+    if (n%2 == 0){
+        n++
+        continue
+    } else {
+        impares.push(n)
+        n++
+    }
+}
 
 console.log(impares)

@@ -9,12 +9,17 @@
  */
 
 // Entrada
-var entrada = [1,2,3,4,5,6,7]
 
-// processamento
+let lista = [23, 56, 21, 1, 98, 47]
+var pares = 0
+var impares = 0
 
-//saida
-var impares = 4,
-    pares = 3
+for (var n of lista){
+    if (n%2 == 0){
+        pares++
+    } else {
+        impares++
+    }
+}
 
-console.log(`${impares} ${pares}`)
+console.log(`Pares: ${pares}. Impares: ${impares}.`)
