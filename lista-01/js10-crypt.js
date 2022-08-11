@@ -47,58 +47,58 @@ console.log(`Encriptando "${texto}": ${lista.toString()}.`)
 
 
 // Minha 1ª abordagem:
-mensagem = "Esse amor é azul como o mar azul"
-console.log('')
-console.log(`Segundo método de criptografia!`)
-console.log(`Mensagem a ser criptografada: "${mensagem}"`)
+// mensagem = "Esse amor é azul como o mar azul"
+// console.log('')
+// console.log(`Segundo método de criptografia!`)
+// console.log(`Mensagem a ser criptografada: "${mensagem}"`)
 
-function encripta(dados){
-	var mensx="";
-	var l;
-	var i;
-	var j=0;
-	var ch;
-	ch = "assbdFbdpdPdpfPdAAdpeoseslsQQEcDDldiVVkadiedkdkLLnm";
-	for (i=0;i<dados.length; i++){
-		j++;
-		l=(Asc(dados.substr(i,1))+(Asc(ch.substr(j,1))));
-		if (j==50){
-			j=1;
-		}
-		if (l>255){
-			l-=256;
-		}
-		mensx+=(Chr(l));
-	}
-	console.log(`Mensagem encriptada: ${mensx}`)
-	decripta(mensx)
-}
-function decripta(dados){
-	var mensx="";
-	var l;
-	var i;
-	var j=0;
-	var ch;
-	ch = "assbdFbdpdPdpfPdAAdpeoseslsQQEcDDldiVVkadiedkdkLLnm";
-	for (i=0; i<dados.length;i++){
-		j++;
-		l=(Asc(dados.substr(i,1))-(Asc(ch.substr(j,1))));
-		if (j==50){
-			j=1;
-		}
-		if (l<0){
-			l+=256;
-		}
-		mensx+=(Chr(l));
-	}
-	console.log(`Mensagem decriptada: ${mensx}`)
-}
-function Asc(String){
-	return String.charCodeAt(0);
-}
+// function encripta(dados){
+// 	var mensx="";
+// 	var l;
+// 	var i;
+// 	var j=0;
+// 	var ch;
+// 	ch = "assbdFbdpdPdpfPdAAdpeoseslsQQEcDDldiVVkadiedkdkLLnm";
+// 	for (i=0;i<dados.length; i++){
+// 		j++;
+// 		l=(Asc(dados.substr(i,1))+(Asc(ch.substr(j,1))));
+// 		if (j==50){
+// 			j=1;
+// 		}
+// 		if (l>255){
+// 			l-=256;
+// 		}
+// 		mensx+=(Chr(l));
+// 	}
+// 	console.log(`Mensagem encriptada: ${mensx}`)
+// 	decripta(mensx)
+// }
+// function decripta(dados){
+// 	var mensx="";
+// 	var l;
+// 	var i;
+// 	var j=0;
+// 	var ch;
+// 	ch = "assbdFbdpdPdpfPdAAdpeoseslsQQEcDDldiVVkadiedkdkLLnm";
+// 	for (i=0; i<dados.length;i++){
+// 		j++;
+// 		l=(Asc(dados.substr(i,1))-(Asc(ch.substr(j,1))));
+// 		if (j==50){
+// 			j=1;
+// 		}
+// 		if (l<0){
+// 			l+=256;
+// 		}
+// 		mensx+=(Chr(l));
+// 	}
+// 	console.log(`Mensagem decriptada: ${mensx}`)
+// }
+// function Asc(String){
+// 	return String.charCodeAt(0);
+// }
 
-function Chr(AsciiNum){
-	return String.fromCharCode(AsciiNum)
-}
+// function Chr(AsciiNum){
+// 	return String.fromCharCode(AsciiNum)
+// }
 
-encripta(mensagem)
+// encripta(mensagem)

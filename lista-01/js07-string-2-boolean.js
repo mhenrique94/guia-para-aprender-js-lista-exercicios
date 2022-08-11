@@ -14,20 +14,25 @@
  */
 
 // Entrada
-var entrada = 'J'
+let verdadeiro = ['y', 'yes', 's', 'sim', 1, '👍']
+var entrada = 'qualquer coisa'
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = false
+if (verdadeiro.includes(entrada.toLowerCase())) {
+    var resultado = true
+} else {
+    var resultado = false
+}
 
 console.log(resultado)
 
-// Minha abordagem:
-const input = 'N'
+// Minha abordagem anterior:
+// const input = 'N'
 
-if (input == 'Y' || input == 'y' || input == 'yes' || input == 'S' || input == 's' || input == 'sim' || input == '1' || input == '👍'){
-    console.log(true)
-} else if (input == 'N' || input == 'n' || input == 'no' || input == 'nao'){
-    console.log(false)
-} else {
-    console.log(false)
-}
+// if (input == 'Y' || input == 'y' || input == 'yes' || input == 'S' || input == 's' || input == 'sim' || input == '1' || input == '👍'){
+//     console.log(true)
+// } else if (input == 'N' || input == 'n' || input == 'no' || input == 'nao'){
+//     console.log(false)
+// } else {
+//     console.log(false)
+// }

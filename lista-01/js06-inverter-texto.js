@@ -17,9 +17,6 @@ console.log(invertido)
 
 // Minha abordagem:
 let texto = "Texto a inverter"
-
-var texto_array = texto.split("")
-var array_invertido = texto_array.reverse()
-var texto_invertido = array_invertido.join("")
+var texto_invertido = texto.split('').reverse().join('')
 
 console.log(`O texto "${texto}" invertido fica assim: "${texto_invertido}".`)

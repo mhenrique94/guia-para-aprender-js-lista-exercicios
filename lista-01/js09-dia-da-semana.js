@@ -15,36 +15,33 @@
 var entrada = 1
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'Domingo'
 
-console.log(resultado)
+let dias_semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
 
 // Minha abordagem:
-let entrada = 9
-
 switch (entrada){
+
     case 1:
-        console.log('Domingo')
+        console.log(dias_semana[0])
         break
     case 2:
-        console.log('Segunda')
+        console.log(dias_semana[1])
         break
     case 3:
-        console.log('Terça')
+        console.log(dias_semana[2])
         break
     case 4:
-        console.log('Quarta')
+        console.log(dias_semana[3])
         break
     case 5:
-        console.log('Quinta')
+        console.log(dias_semana[4])
         break
     case 6:
-        console.log('Sexta')
+        console.log(dias_semana[5])
         break
     case 7:
-        console.log('Sábado')
+        console.log(dias_semana[6])
         break
     default:
-        console.log('Digite um número válido')
-        break
+        console.log('Entrada inválida')
 }

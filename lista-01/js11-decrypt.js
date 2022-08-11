@@ -12,13 +12,20 @@
  */
 
 // Entrada
-var texto = 'bcbduf'
+var texto = '$fcsb'
 
 // implemente aqui uma lógica para descriptografar o texto
 let lista = []
 
 for (var el of texto){
-	el = el.charCodeAt(0) - 1
+    el = el.charCodeAt(0) - 1
+    if(el == 35){
+        el = 90
+    }
+
+    if(el == 64){
+        el == 122
+    }
     lista.push(String.fromCharCode(el))
 }
 

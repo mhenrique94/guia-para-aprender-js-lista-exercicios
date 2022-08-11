@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "type": "node",
-            "runtimeExecutable": "/home/marcelo/.nvm/versions/node/v14.19.3/bin/node"
+            "runtimeExecutable": "/home/marcelosilva/.nvm/versions/node/v14.19.3/bin/node"
         }
     ]
 }
