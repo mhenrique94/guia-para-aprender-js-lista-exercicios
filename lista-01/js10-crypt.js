@@ -27,7 +27,7 @@
 var texto = 'zebra'
 
 // implemente aqui uma lógica para criptografar o texto
-lista = []
+let lista = []
 
 for (var el of texto){
 	if (el == 'z'){
