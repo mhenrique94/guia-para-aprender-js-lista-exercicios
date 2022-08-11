@@ -16,3 +16,13 @@ var entrada = 'a'
 var resultado = 'vogal'
 
 console.log(resultado)
+
+//Minha abordagem
+const input = 'A'
+
+let input_toLowercase = input.toLocaleLowerCase()
+if (input_toLowercase == 'a' || input_toLowercase == 'e' || input_toLowercase == 'i' || input_toLowercase == 'o' || input_toLowercase == 'u'){
+    console.log('Vogal')
+} else {
+    console.log('Consoante')
+}

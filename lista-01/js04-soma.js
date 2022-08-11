@@ -23,3 +23,16 @@ var n2 = 40
 var resultado = '?'
 
 console.log(resultado)
+
+// Minha abordagem:
+
+let numeros = [1, 8]
+var soma = 0
+for (var n of numeros){
+    if (!n){
+        console.log('Numero invalido!')
+    } else {
+        soma += n
+    }
+}
+console.log(`A soma dos números é ${soma}.`)

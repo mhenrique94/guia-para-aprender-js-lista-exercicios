@@ -20,3 +20,14 @@ var entrada = 'J'
 var resultado = false
 
 console.log(resultado)
+
+// Minha abordagem:
+const input = 'N'
+
+if (input == 'Y' || input == 'y' || input == 'yes' || input == 'S' || input == 's' || input == 'sim'){
+    console.log(true)
+} else if (input == 'N' || input == 'n' || input == 'no' || input == 'nao'){
+    console.log(false)
+} else {
+    console.log('Digite um caractere válido')
+}
