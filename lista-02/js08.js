@@ -1,0 +1,1 @@
+// 2.8) percorra uma lista de nros e retorne qtos numeros pares/impares

@@ -2,13 +2,12 @@
 
 mensagem = "Esse amor é azul como o mar azul"
 console.log(`Mensagem a ser criptografada: "${mensagem}"`)
-var encrypted = CryptoJS.AES.encrypt(mensagem, key)
-console.log(`Mensagem criptografada: "${encrypted}".`)
-var decrypted = CryptoJS.AES.decrypt(encrypted, key)
-console.log(`Mensagem decriptografada novamente: "${decrypted}".`)
+// var encrypted = CryptoJS.AES.encrypt(mensagem, key)
+// console.log(`Mensagem criptografada: "${encrypted}".`)
+// var decrypted = CryptoJS.AES.decrypt(encrypted, key)
+// console.log(`Mensagem decriptografada novamente: "${decrypted}".`)
 
-
-function Encripta(dados){
+function encripta(dados){
 	var mensx="";
 	var l;
 	var i;
@@ -26,9 +25,10 @@ function Encripta(dados){
 		}
 		mensx+=(Chr(l));
 	}
-	document.getElementById("1").value=mensx;
+	console.log(`Mensagem encriptada: ${mensx}`)
+	decripta(mensx)
 }
-function Descripta(dados){
+function decripta(dados){
 	var mensx="";
 	var l;
 	var i;
@@ -46,7 +46,7 @@ function Descripta(dados){
 		}
 		mensx+=(Chr(l));
 	}
-	document.getElementById("2").value=mensx;
+	console.log(`Mensagem decriptada: ${mensx}`)
 }
 function Asc(String){
 	return String.charCodeAt(0);
@@ -55,3 +55,5 @@ function Asc(String){
 function Chr(AsciiNum){
 	return String.fromCharCode(AsciiNum)
 }
+
+encripta(mensagem)
