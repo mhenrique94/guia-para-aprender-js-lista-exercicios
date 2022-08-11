@@ -9,5 +9,5 @@ while (cont < 11){
 }
 
 tabuada_completa = array.toString()
-tabuada_completa = tabuada_completa.replace(',', ', ')
+tabuada_completa = tabuada_completa.replace(',', ', ') // não funciona, pq?
 console.log(`Tabuada de ${numero_tabuada}: ${tabuada_completa}`)
