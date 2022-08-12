@@ -1,7 +1,7 @@
 /**
  * Faça um programa que retorne true ou false conforme a entrada Y,y,yes,S,sim
- * 
- * ENTRADA          SAÍDA
+ *
+ * ENTRADA                   SAÍDA
  * Y                         true
  * Yes, YES, yes             true
  * y                         true
