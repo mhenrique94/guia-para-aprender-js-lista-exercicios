@@ -4,7 +4,7 @@
  * apenas converta a para b, b para c e assim por diante. 
  * 
  * ENTRADA          SAÍDA
- * abacate          bcbduf
+ * abacate          bcbdbuf
  * zebra            @fcsb
  * Zebra            $fcsb
  * 
@@ -19,6 +19,12 @@
  * e assim por diante!
  * quando for z ou Z mudar para @ e $ respectivamente ao invés de {
  * 
+ * Tarefa
+ * - entenda como converter a para 97
+ * - percorra o abacate para gerar os ordinais correspondente: 97,  98, 97 ...
+ * - percorra a lista dos inteiros corresponde somando 1       98, 100, 98 ...
+ * - percorra novamente, agora voltando para caractere          b,   c, b  ...
+ *
  * IMPORTANTE:
  * - Não usar bibliotecas, basta manipular a string de entrada de forma a embaralhá-la
  */
@@ -28,6 +34,6 @@ var texto = 'abacate'
 
 // implemente aqui uma lógica para criptografar o texto
 
-var textoCripto = 'bcbduf'
+var textoCripto = 'bcbdbuf'
 
 console.log(textoCripto)
